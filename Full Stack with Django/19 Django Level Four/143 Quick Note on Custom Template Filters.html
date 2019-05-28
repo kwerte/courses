@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>143 Quick Note on Custom Template Filters</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Hi Everyone,</p><p>A quick note on the next few lectures! When we create our own <strong>cut</strong> filter, we actually forget to load it in, at the top of your template/html file, you need to add a load call:</p><p><strong>{% load my_templates %}</strong><br></p><p>Where you would replace my_templates with whatever you decided to call your .py file containing the extra template tags. This is the .py file that is directly underneath the templatetags folder.</p><p>Full details and another example can be found here:</p><p>https://docs.djangoproject.com/en/1.11/howto/custom-template-tags/<br></p><p>The reason it still worked for me in the following videos was because cut is already a built in filter, so I got unlucky with the name and didn't realize I forgot to load it in!</p><p>Thanks,</p><p>Jose</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
